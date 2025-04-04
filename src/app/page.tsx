@@ -1,10 +1,10 @@
-const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
-
 const HomePage = async () => {
-  await delay(5000)
+  await new Promise(resolve => setTimeout(resolve, 2000))
   return (
-    <div>
-      <h1>Home page</h1>
+    <div className='flex h-screen w-screen items-center justify-center'>
+      <div>
+        <h1>Home page</h1>
+      </div>
     </div>
   )
 }
